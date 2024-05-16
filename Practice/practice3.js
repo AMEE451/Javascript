@@ -1,43 +1,55 @@
 
-let users=[]
+let users = []
 
-const uimaker=()=>{
-    document.getElementById("tbody").innerhtml=""
-    users.map((ele)=>{
+const handleData = (index) => {
+    users.splice(index, 1)
+    uimaker()
+}
 
-        let tr=document.createElement('tr')
-        let td1=document.createElement('td')
-        td1.innerHTML=ele.name
+const uimaker = () => {
+    document.getElementById("tbody").innerhtml = ""
+    users.map((ele, i) => {
 
-        let td2=document.createElement('td')
-        td2.innerHTML=ele.email
+        let tr = document.createElement('tr')
+        let td1 = document.createElement('td')
+        td1.innerHTML = ele.email
 
-        let td3=document.createElement('td')
-        td3.innerHTML=ele.number
+        let td2 = document.createElement('td')
+        td2.innerHTML = ele.password
 
-        let td4=document.createElement('td')
-        td4.innerHTML=ele.number
-        tr.append(td1,td2,td3,td4)
+        let td3 = document.createElement('td')
+        td3.innerHTML = ele.number
+
+        let td4 = document.createElement('td')
+        td4.innerHTML = "delete"
+
+        td4.addEventListener("click", () => handleData(i))
+        tr.append(td1, td2, td3, td4)
 
         document.getElementById("tbody").append(tr)
-
-
-
     })
+}
 
-const handledata=(e)=>{
-    e.preventedefault();
 
-    let data={
-        name:document.getElementById("name").value,
-        email:document.getElementById("email").value,
-        number:document.getElementById("number").value,
-        salary:document.getElementById("salary").value
+
+const handledata = (e) => {
+    e.preventDefault();
+
+    let data = {
+        name: document.getElementById("email").value,
+        email: document.getElementById("password").value,
+        number: document.getElementById("number").value,
     }
-
+    console.log("test", data);
+    // console.log("qsds");
     users.push(data)
-
+    uimaker()
 
 }
 
-document.getElementById("data").addEventListener("submit",handledata)
+document.getElementById("data").addEventListener("submit", handledata)
+
+document.getElementById("deleteall").addEventListener("click", () => {
+    document.getElementById("tbody").innerHTML = ""
+    users = []
+})

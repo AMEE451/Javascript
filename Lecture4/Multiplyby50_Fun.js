@@ -1,8 +1,11 @@
 
-const multiply=()=>{
+const getvalue=()=>{
+    let num=document.getElementById("num").value;
 
-    let number=process.argv[2]
-    return number*50;
+    document.getElementById("result").innerHTML=multiply(num);
 }
-let result=multiply()
-console.log("Multiplication is:",result);
+
+const multiply=(num)=>{
+
+    return num*50;
+}

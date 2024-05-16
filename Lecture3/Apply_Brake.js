@@ -8,4 +8,4 @@ if(speed>40){
 }
 else{
     console.log("Keep going");
-}
+}   

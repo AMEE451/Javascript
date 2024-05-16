@@ -1,9 +1,13 @@
 
-const square=()=>{
+const getvalue=()=>{
     
-    let N=process.argv[2]
-    return N*N
+    let num=document.getElementById("num").value;
+
+    document.getElementById("result").innerHTML=square(num);
+
 }
 
-let result=square()
-console.log("Square is:",result);
+const square=(num)=>{
+
+    return num*num;
+}

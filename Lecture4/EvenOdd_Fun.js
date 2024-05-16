@@ -1,12 +1,19 @@
 
-const output=()=>{
+const getvalue=()=>{
     
-    let Number=process.argv[2]
-    if(Number%2==0){
-        console.log("Even Number");
+    let num=document.getElementById("num").value;
+    evenodd(num)
+    console.log(num);
+}
+
+const evenodd=(num)=>{
+    // console.log(num);
+    if(num%2==0)
+    {
+        document.getElementById("result").innerHTML="It's an Even Number";
     }
-    else{
-        console.log("Odd Number");
+    else
+    {
+        document.getElementById("result").innerHTML="It's an Odd Number";
     }
 }
- output()

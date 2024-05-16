@@ -1,10 +1,6 @@
 
-const variable=()=>{
+const Getvalue=()=>{
+    let name=document.getElementById("name").value;
 
-    let number=10
-    console.log("Initial Number:",number);
-    number=20
-    console.log("Updated Number:",number);
-    
+    document.getElementById("result").innerHTML=name;
 }
-variable()    

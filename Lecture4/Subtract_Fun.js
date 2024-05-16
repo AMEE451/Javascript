@@ -1,13 +1,19 @@
 
-const subtract=()=>{
+const getvalue=()=>{
+    let num1=document.getElementById("num1").value;
+    let num2=document.getElementById("num2").value;
+    let num3=document.getElementById("num3").value;
+    let num4=document.getElementById("num4").value;
 
-    let one=10
-    let two=4
-    let three=2
-    let four=1
+    let answer=sub(num1,num2,num3,num4);
 
-    return one-two-three-four
+    document.getElementById("result").innerHTML=answer;
 }
 
-let result=subtract()
-console.log("Output",result);
+
+const sub=(num1,num2,num3,num4)=>{
+    
+   let ans=(num1)-(num2)-(num3)-(num4);
+
+   return ans;
+}

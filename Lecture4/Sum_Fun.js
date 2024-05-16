@@ -1,13 +1,18 @@
 
-const sum=()=>{
+const getvalue=()=>{
+    let num1=document.getElementById("num1").value;
+    let num2=document.getElementById("num2").value;
+    let num3=document.getElementById("num3").value;
 
-    let one=2
-    let two=3
-    let three=4
-    let four=5
+    let answer=sum(num1,num2,num3);
 
-    return one+two+three+four
+    document.getElementById("result").innerHTML=answer;
 }
 
-let result=sum()
-console.log("Sum is:",result);
+
+const sum=(num1,num2,num3)=>{
+    
+   let ans=Number(num1)+Number(num2)+Number(num3);
+
+   return ans;
+}
