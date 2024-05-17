@@ -2,11 +2,11 @@
 const getvalue=()=>{
     
     let num=document.getElementById("num").value;
-    evenodd(num)
+    Evenodd(num)
     console.log(num);
 }
 
-const evenodd=(num)=>{
+const Evenodd=(num)=>{
     // console.log(num);
     if(num%2==0)
     {
