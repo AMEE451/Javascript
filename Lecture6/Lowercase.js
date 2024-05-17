@@ -1,10 +1,14 @@
 
-
-
 let Arr = ["RED", "AND", "WHITE"];
-Arr[1] = Arr[1].toLowerCase();
-let n=Arr.length
-for(let i=0;i<n;i++)
-{
-    console.log(Arr[i]);
+
+const alter = (Arr) => {
+    for (let i = 0; i < Arr.length; i++) {
+        if (i % 2 == 0) {
+            console.log(Arr[i]);
+        }
+        else {
+            console.log(Arr[i].toLowerCase());
+        }
+    }
 }
+alter(Arr)
