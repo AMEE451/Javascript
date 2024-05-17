@@ -4,5 +4,5 @@ let three=3
 let four=2
 let five=6
 
-let product=one*two*three*four*five
-console.log("Product:",product);
+let Product=one*two*three*four*five
+console.log("Product:",Product);
