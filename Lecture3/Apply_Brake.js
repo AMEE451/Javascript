@@ -1,7 +1,7 @@
-let distance=process.argv[2]
-let time=process.argv[3]
+let Distance=process.argv[2]
+let Time=process.argv[3]
 
-let Speed=distance/time
+let Speed=Distance/Time
 
 if(Speed>40){
     console.log("Apply Brake");
