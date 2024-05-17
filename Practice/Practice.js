@@ -17,12 +17,12 @@ const uimaker= ()=>{
 const handleData=(e)=>{
     e.preventDefault();
             
-    let student={
+    let Student={
         name:document.getElementById("name").value,
         grid:document.getElementById("grid").value,
         email:document.getElementById("email").value,
     };
-    students.push(student);
+    students.push(Student);
     uimaker();
 };
 
