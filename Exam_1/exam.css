@@ -1,0 +1,36 @@
+
+.btn1 {
+    background-color: rgb(247, 102, 102);
+    color: black;
+    font-weight: bold;
+    width: 150px;
+    border-radius: 5px;
+    border-style: none;
+    padding: 5px; 
+}
+
+ .btn1:hover {
+    background-color: rgb(231, 1, 24);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px;
+    color: white;
+}
+
+input:hover {
+    box-shadow: rgba(131, 131, 241, 0.25) 0px 50px 100px  inset;
+}
+
+select:hover {
+    box-shadow: rgba(131, 131, 241, 0.25) 0px 50px 100px inset;
+}
+
+button:hover{
+  box-shadow: rgba(1, 35, 5, 0.25) 0px 0.5px 5px 5px inset;
+}
+
+/* #tdata{
+    text-align: center;
+} */
+
+/* .dlt:hover{
+    background-color: brown;
+} */
