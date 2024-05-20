@@ -1,0 +1,33 @@
+
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+.main{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+#img{
+    display: flex;
+    justify-content: center;
+}
+
+#btn{
+    font-size: x-large;
+    padding: 12px 70px;
+    border-radius: 5px;
+    background-color: rgb(231, 230, 230);
+    box-shadow: 7px 7px 15px 0.5px grey;
+    border-style: none;
+    border: 1px solid rgb(202, 202, 202);
+}
+#btn:hover{
+    background-color: black;
+    color: White;
+}
+.btn_div{
+    text-align: center;
+}
