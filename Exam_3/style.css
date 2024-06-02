@@ -1,0 +1,31 @@
+
+.que{
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.opt{
+    border: 0.5px solid grey;
+    padding: 3px;
+    margin:3px;  
+    border-radius: 3px;
+}
+
+input{
+    background-color: rgb(235, 234, 234);
+    padding: 5px 20px;
+    margin: 2px;
+    border-radius: 3px;
+    font-size: large;
+}
+
+input:hover{
+    background-color:white
+}
+#add{
+    font-weight: bold;
+}
+#submit:hover{
+    background-color: rgb(59, 217, 1);
+}
