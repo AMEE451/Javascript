@@ -55,15 +55,29 @@ const counter4=()=>{
 document.getElementById("share").addEventListener("click",counter4);
 
 
-// let count1,count2,count3,count4=0;
+// let count1,count2,count3,count4;
+// let count=localStorage.getItem(key,count)||0;
+// document.getElementById(id).innerHTML=count;
 
-// const Insta=(click,id,variable,fun,storage,key)=>{
-//     document.getElementById("click").addEventListener("click",()=>{
-//        
-//     })
+// const local=(id,key,count)=>{
+//     count++;
+//     document.getElementById(id).innerHTML=count;
+//     localStorage.setItem(key,count);
 // }
 
-// Insta("like","a_like",count1,local,localStorage,"key1");
-// Insta("comment","a_comment",count2,local,localStorage,"key2");
-// Insta("follow","a_follow",count3,local,localStorage,"key3");
-// Insta("share","a_share",count4,local,localStorage,"key4");
+// let countt=sessionStorage.getItem(key,count)||0;
+// const session=(id,key,count)=>{
+//     count++;
+//     document.getElementById(id).innerHTML=countt;
+//     sessionStorage.setItem(key,count);
+// }
+// const counter=(click,id,key,cnt,fun)=>{
+//     document.getElementById(click).addEventListener("click",()=>{
+//           local(count, id, key,cnt,fun);
+//           session(count, id, key,cnt,fun)
+//         });
+// }
+// counter("like","a_like","key1",count1,localStorage)
+// counter("comment","a_comment","key2",count2,localStorage)
+// counter("follow","a_follow","key3",count3,localStorage)
+// counter("share","a_share","key4",count4,sessionStorage)
