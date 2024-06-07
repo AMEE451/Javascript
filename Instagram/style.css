@@ -1,0 +1,65 @@
+@font-face{
+    font-family: myfont ;
+    src:url(/Instagram/kingsman-font/KingsmanDemo-1GVgg.ttf)
+}
+#like:hover{
+    background-color: rgb(220, 235, 248);
+    border: 0.2px solid rgb(198, 199, 249);
+}
+#comment:hover{
+    background-color: rgb(220, 235, 248);
+    border: 0.2px solid rgb(198, 199, 249);
+}
+#share:hover{
+    background-color: rgb(220, 235, 248);
+    border: 0.2px solid rgb(198, 199, 249);
+}
+#follow:hover{
+    background-color: rgb(220, 235, 248);
+    border: 0.2px solid rgb(198, 199, 249);
+}
+
+#a_like{
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+#a_comment{
+    margin-left: 28px;
+    font-weight: bold;
+}
+
+#a_follow{
+    margin-left: 28px;
+    font-weight: bold;
+}
+
+#a_share{
+    margin-left: 28px;
+    font-weight: bold;
+}
+#post{
+    font-family:myfont;
+    padding-top: 30px;
+    text-align: center;
+}
+.main_div{
+    border: 1px solid rgb(194, 194, 246); 
+    width: 420px;
+    height: 530px;
+    margin-left: 520px;
+    margin-top: 130px;
+    border-radius: 10px;
+    box-shadow: rgb(207, 225, 241) 3px 3px 10px 0px inset, rgba(249, 189, 189, 0.5) -3px -3px 10px 1px inset;
+}
+.main_div:hover{
+    box-shadow: rgba(207, 225, 241) 3px 3px 15px 0px, rgba(249, 189, 189, 0.5) -3px -3px 15px 1px;
+}
+  
+.main_div:hover img{
+    box-shadow: rgb(59, 93, 95) 0.5px 0.5px 5px 2px;
+    border: 1px solid rgb(59, 93, 95) ;
+}
+img{
+    border: 1px solid black;
+}
