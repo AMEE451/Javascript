@@ -42,10 +42,10 @@ setInterval(() => {
     let Minutes = Custom_Time.getMinutes();
     let Seconds = Custom_Time.getSeconds();
 
-    // if (Hours > 12) {
-    //     Hours -= 12;
-    // }
     let AmPm = Hours >= 12 ? "PM" : "AM"
+    if (Hours > 12) {
+        Hours -= 12;
+    }
     document.getElementById("time").innerHTML = (`${Hours}:${Minutes}:${Seconds} ${AmPm}`)
 }, 1000);
 

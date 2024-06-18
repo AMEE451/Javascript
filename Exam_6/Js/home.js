@@ -2,7 +2,7 @@
 import getvalue from "../Components/helper.js"
 import navbar from "../Components/navbar.js"
 document.getElementById("navbar").innerHTML=navbar()
-
+// console.log(navbar);
 let Students=JSON.parse(localStorage.getItem("book-list"))||[];
 
 const handleData = (e) => {

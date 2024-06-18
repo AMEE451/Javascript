@@ -244,30 +244,36 @@ const Tag = (tagname) => {
   return document.createElement(tagname)
 }
 
-let temp = ``
+// let temp = ``
 data.map((ele) => {
-  // let img=document.createElement("img")
-  // img.src=ele.imagelet
+  let img=document.createElement("img")
+  img.src=ele.image
   // let price=document.createElement("price")
-  // price.innerHTML=ele.price
-  // let title=Tag("h1")
-  // title.innerHTML=ele.title
-  // let div=document.createElement("div")
-  // div.append(img,price,title)
+  let price=Tag("h5")
+  price.innerHTML=ele.price
+  // let title=document.createElement("h3")
+  let title=Tag("h3")
+  title.innerHTML=ele.title
+  let rate1=Tag("p")
+  rate1.innerHTML=ele.rating.rate
+  let rate2=Tag("p")
+  rate2.innerHTML=ele.rating.count
+  let div=document.createElement("div")
+  div.append(img,price,title,rate1,rate2)
 
+  document.getElementById("products").append(div)
 
-
-  temp += ` <div class="box">
-    <h1> ${ele.title}</h1>
-    <h3> ${ele.price}</h3> 
-    <p> ${ele.description}</p>
-    <h4> ${ele.category}</h4>
-    <p> ${ele.rating.rate}</p>
-    <img src=${ele.image} alt="">
-  </div>`
+//   temp += ` <div class="box">
+//     <h1> ${ele.title}</h1>
+//     <h3> ${ele.price}</h3> 
+//     <p> ${ele.description}</p>
+//     <h4> ${ele.category}</h4>
+//     <p> ${ele.rating.rate}</p>
+//     <img src=${ele.image} alt="">
+//   </div>`
 
 })
 
-console.log(temp);
-document.getElementById("products").innerHTML = temp
-// document.getElementById("products").append(div)
+// console.log(temp);
+// document.getElementById("products").innerHTML = temp
+document.getElementById("products").append()

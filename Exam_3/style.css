@@ -26,6 +26,6 @@ input:hover{
 #add{
     font-weight: bold;
 }
-#submit:hover{
+.submit:hover{
     background-color: rgb(59, 217, 1);
 }

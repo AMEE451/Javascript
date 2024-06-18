@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add news</title>
+</head>
+<body>
+    
+    <nav>
+        <a href="./index.html">Home page</a>
+        <a href="./add_news.html">Add News</a>
+        <a href="./signup.html">Sign Up</a>
+        <a href="./login.html">Login</a>
+    </nav>
+
+    <form id="addnews">
+        <input type="text" id="title" placeholder="Title" > <br>
+        <input type="text" id="des" placeholder="Description"><br>
+        <input type="url" id="image" placeholder="Image url"><br>
+        <select name="" id="country">
+            <option selected >Countries</option>
+            <option >India</option>
+            <option >USA</option>
+            <option >UK</option>
+        </select><br>
+        <input type="submit" value="Add News">
+    </form>
+
+    <button id="like"></button>
+    <p id="n_like"></p>
+
+</body>
+<script src="./add_news.js"></script>
+</html>

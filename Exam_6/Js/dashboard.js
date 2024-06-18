@@ -5,30 +5,29 @@ import navbar from "../Components/navbar.js"
 document.getElementById("navbar").innerHTML=navbar()
 
 let Students=JSON.parse(localStorage.getItem("book-list"))||[];
-let Buy=JSON.parse(localStorage.getItem("buy-list"))||[];
 
-let Totalbooks = 0;
+let Totalbooks = Students;
 
 const Delete = (index) => {
     
     Students.splice(index, 1);
-    localStorage.setItem("buy-list",JSON.stringify(Buy))
+    localStorage.setItem("buy-list",JSON.stringify(Students))
     localStorage.setItem("book-list",JSON.stringify(Students))
-   
 
-    Totalbooks = 0;
-    document.getElementById("totalbooks").innerHTML = `Total books : ${Totalbooks}`;
+    // Totalbooks = 0;
+    // document.getElementById("totalbooks").innerHTML = `Total books : ${Totalbooks}`;
     uimaker()
 }
-document.getElementById("totalbooks").innerHTML = `Total books : ${Totalbooks}`;
 
 const AddData = (index) => {
-    Students.splice(index, 1);
-    localStorage.setItem("bookmark-list",JSON.stringify(Students))
-    localStorage.setItem("book-list",JSON.stringify(Students))
     
-    Totalbooks = 0;
-    document.getElementById("totalbooks").innerHTML = `Total books : ${Totalbooks}`;
+    Students.splice(index, 1);
+    localStorage.setItem("book-list",JSON.stringify(Students))
+    localStorage.setItem("bookmark-list",JSON.stringify(Students))
+
+    
+    // Totalbooks = 0;
+    // document.getElementById("totalbooks").innerHTML = `Total books : ${Totalbooks}`;
 
     uimaker()
 }
@@ -39,7 +38,6 @@ const uimaker=()=>{
     Students.map((ele,i)=>{
 
         let tr = document.createElement("tr")
-
         let book_name=createtag("td",ele.book_name)
         let author_name=createtag("td",ele.author_name)
         let description=createtag("td",ele.description)
@@ -76,12 +74,12 @@ uimaker();
 Totalbooks = 0;
 document.getElementById("totalbooks").innerHTML = `Total Books : ${Totalbooks}`;
 
-const category = (category) =>{
+const handlecategory = (category) =>{
     let temp = Students.filter((ele)=> ele.category == category)
     console.log(temp);
-    uimaker(temp)
+    uimaker(temp);
 }
-document.getElementById("All").addEventListener("click",()=>uimaker(Students))
-document.getElementById("selfhelp").addEventListener("click",()=>category("selfhelp"))
-document.getElementById("Finance").addEventListener("click",()=>category("Finance"))
-document.getElementById("Fiction").addEventListener("click",()=>category("Fiction"))
+document.getElementById("all").addEventListener("click",()=>uimaker(Students))
+document.getElementById("selfhelp").addEventListener("click",()=>handlecategory("Self Help"))
+document.getElementById("finance").addEventListener("click",()=>handlecategory("Finance"))
+document.getElementById("fiction").addEventListener("click",()=>handlecategory("Fiction")) 

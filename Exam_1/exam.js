@@ -32,7 +32,7 @@ const uimaker = () => {
         td5.innerHTML = ele.experience
         let td6 = document.createElement("td")
         td6.innerHTML = ele.contact
-        console.log("amee");
+    
 
         let td7 = document.createElement('td')
         if (ele.experience > 5) {

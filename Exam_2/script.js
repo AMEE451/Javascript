@@ -73,23 +73,22 @@ let data=[]
     document.getElementById("cart").addEventListener("submit",handledata)
 
     
+    let min=30;
+    let sec=59;
 
-const countdownTime = 30 * 60; // 30 minutes(countdown time)
-const now = new Date().getTime(); //current time
-const endTime = now + countdownTime *1000; //endtime
+    let id=setInterval(() => {
+        
+        document.getElementById("time").innerHTML=(`Hurry Up! ${min}:${sec}`)
+        sec=sec-1
 
- setInterval(() => {
-  const remainingTime = endTime - new Date().getTime();
+        if(min==0 && sec==0){
+            document.getElementById("time").innerHTML=(`${min}:${sec}`)
+            document.getElementById("time").innerHTML=("Time Up")
+            clearInterval(id)
+        }
+        if(sec==0){
+            min=min-1
+            sec=59
+        }
 
-  const minutes = Math.floor(remainingTime / 1000 / 60);
-  const seconds = Math.floor(remainingTime / 1000 % 60)+2;
-
-  document.getElementById("time").innerHTML = (`Hurry Up! ${minutes}:${seconds}`);
-
-  if (remainingTime <= 0) {
-    clearInterval(interval);
-    document.getElementById("time").innerHTML = "Time's up!";
-  }
-}, 1000);
-
-    
+    },1000);

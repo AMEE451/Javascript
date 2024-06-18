@@ -196,7 +196,7 @@ let questions = [
 
     document.querySelector("#quiz").innerHTML=""
 
-    questions.map((ele,index) => {
+    questions.map((ele) => {
 
       let que = document.createElement("h3");
       que.innerHTML =ele.question;
@@ -254,7 +254,6 @@ let questions = [
       maindiv.append(que, opt1, opt2, opt3, opt4);
   
       document.querySelector("#quiz").append(maindiv)
-    
     })
 }
 
@@ -274,7 +273,6 @@ const handledata=(e)=>{
     }
     questions.push(New);
     uimaker();
-
 }
 
 uimaker()
