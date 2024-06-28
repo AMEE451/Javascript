@@ -1,7 +1,7 @@
 
 import navbar from "../Components/navbar.js";
 let isLogin=localStorage.getItem("isLogin")||false;
-// let userData=JSON.parse(localStorage.getItem("user"))
+let userData=JSON.parse(localStorage.getItem("user"))
 
 document.getElementById("navbar").innerHTML = navbar()
 
@@ -12,9 +12,9 @@ else {
     window.location.href = "/project/pages/Login.html"
 }
 
-document.getElementById("logout").addEventListener("clcik",(e)=>{
+document.getElementById("logout").addEventListener("click",(e)=>{
     e.preventDefault();
-    if(isLogin==false){
-        localStorage.removeItem("isLogin")
-    }
+    localStorage.setItem("IsLogin", false);
+    alert("Logged Out")
+    window.location.href="/project/pages/Login.html"
 })

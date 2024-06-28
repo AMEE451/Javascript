@@ -20,7 +20,7 @@ const handleData = (e) => {
         else if (userData.password != user.password) {
             alert("password mismatch: " + user.password)
         }
-        else {
+        else {  
             alert("login success: " + user.username)
             localStorage.setItem("isLogin", true);
         }

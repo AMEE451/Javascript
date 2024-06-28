@@ -34,23 +34,24 @@ const navbar=(login="login",signup="Signup")=>{
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/project/pages/Cart.html">Cart</a>
+            <a class="nav-link" href="/project/pages/Cart.html" >Cart
+            <span class="badge bg-secondary" id="count"></span></a>
           </li>
-          <li class="nav-item" id="logout">
-            <a class="nav-link" href="/project/pages/Login.html">${login}</a>
+          <li class="nav-item" >
+            <a class="nav-link" href="/project/pages/Login.html" id="logout">${login}</a>
           </li>
-
+          
           <li class="nav-item">
             <a class="nav-link" href="/project/pages/Signup.html">${signup}</a>
           </li>
         </ul>
-        <form class="d-flex" role="search">
+        <form class="d-flex" role="search" id="search">
           <input
             class="form-control me-2"
             type="search"
             placeholder="Search"
             aria-label="Search"
-          />
+            id="searchvalue"/>
           <button class="btn btn-outline-success" type="submit">
             Search
           </button>
@@ -59,6 +60,6 @@ const navbar=(login="login",signup="Signup")=>{
     </div>
   </nav>`
 
-3}
+}
 
 export default navbar

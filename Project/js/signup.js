@@ -1,4 +1,6 @@
 import getValue from "../Components/helper.js";
+import navbar from "../Components/navbar.js";
+document.getElementById("navbar").innerHTML = navbar()
 
 const handleData = (e) => {
     e.preventDefault();
