@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #api{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        margin-left: 200px;
+        border: 1px solid black;
+        gap: 20px;
+    }
+    div{
+        border: 1px solid black;
+    }
+</style>
+<body>
+
+    <div style="position: fixed; border: 1px solid black;">
+        <div id="sort">Price Sort</div>
+        <div id="filter">Filter</div>
+        <input type="text" placeholder="search" id="search">
+    </div>
+
+   
+    <div id="api"></div>
+
+</body>
+<script type="module" src="./index.js"></script>
+</html>
