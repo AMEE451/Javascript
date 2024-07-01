@@ -41,11 +41,18 @@ const uimaker=(Data)=>{
         Data.reviews.map((ele)=>{
             let reviews=document.createElement("p")
             reviews.innerHTML=`Rating:${ele.rating}`;
+            let comment=document.createElement("p")
+            comment.innerHTML=`Comment:${ele.comment}`;
+            let date=document.createElement("p")
+            date.innerHTML=`Date : ${ele.date}`;
+            let reviewerName=document.createElement("p")
+            reviewerName.innerHTML=`reviewerName : ${ele.reviewerName}`;
+            let div=document.createElement("div")
+            div.append(reviews,comment,date,reviewerName)
 
-            document.getElementById("single").append(reviews)
+            document.getElementById("single").append(div)
         }) 
     
-   
 }
 
 

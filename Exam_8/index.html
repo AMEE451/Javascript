@@ -1,33 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </head>
 <style>
+    #api {
+        /* display: grid;
+        grid-template-columns: repeat(4, 1fr); */
+        gap: 10px;
+        text-align: center;
+    }
+    
+    #main{
+        display: flex;
+    }
+
+    div {
+        border: 1px solid black;
+    }
+
+    @media(max-width:768px){
+        #main{
+            display: block;
+            width: 100%;
+        }
+        #sider{
+        display: flex;
+    }
     #api{
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-        margin-left: 200px;
-        border: 1px solid black;
-        gap: 20px;
+        margin-top: 50px;
+        /* margin-left: -100px; */
     }
-    div{
-        border: 1px solid black;
     }
+  
 </style>
+
 <body>
 
-    <div style="position: fixed; border: 1px solid black;">
-        <div id="sort">Price Sort</div>
-        <div id="filter">Filter</div>
-        <input type="text" placeholder="search" id="search">
+    <div id="main">
+
+    <div id="sider">
+        <div class="btn" id="lth">Low to High</div> <br>
+        <div class="btn" id="htl">high to Low</div> <br>
+
+        <div id="Beauty" class="btn">Beauty</div> <br>
+        <div id="Fragrances" class="btn">Fragrances</div> <br>
+        <div id="Furniture" class="btn">Furniture</div> <br>
+        <div id="Groceries" class="btn">Groceries</div> <br>
+
+        <div id="all" class="btn">All</div>
+
+        <form id="search">
+            <input type="text" placeholder="search" id="searchdata"> <br>
+            <input type="submit">
+        </form>
     </div>
 
-   
-    <div id="api"></div>
+
+    <div id="api" style="display: flex; flex-wrap:wrap;"></div>
+</div>
 
 </body>
 <script type="module" src="./index.js"></script>
+
 </html>
