@@ -1,0 +1,181 @@
+{
+  "users": [
+    {
+      "id": "d7cd",
+      "name": "Amee",
+      "email": "",
+      "password": "",
+      "category": "category"
+    },
+    {
+      "id": "5899",
+      "name": "",
+      "email": "desaiamee699@gmail.com",
+      "password": "123",
+      "category": "category"
+    },
+    {
+      "id": "cda7",
+      "name": "",
+      "email": "",
+      "password": "",
+      "category": "User"
+    },
+    {
+      "id": "9c5c",
+      "name": "",
+      "email": "",
+      "password": "",
+      "category": "Admin"
+    },
+    {
+      "id": "a5f1",
+      "name": "",
+      "email": "",
+      "password": "",
+      "category": "Admin"
+    },
+    {
+      "id": "42c2",
+      "name": "",
+      "email": "",
+      "password": "",
+      "category": "Admin"
+    },
+    {
+      "id": "6af4",
+      "name": "",
+      "email": "",
+      "password": "",
+      "category": "category"
+    },
+    {
+      "id": "95d7",
+      "name": "",
+      "email": "",
+      "password": "",
+      "category": "category"
+    },
+    {
+      "id": "3e7c",
+      "name": "",
+      "email": "",
+      "password": "",
+      "category": "Admin"
+    },
+    {
+      "id": "2147",
+      "name": "",
+      "email": "",
+      "password": "",
+      "category": "Admin"
+    },
+    {
+      "id": "c315",
+      "name": "",
+      "email": "",
+      "password": "",
+      "category": "Admin"
+    },
+    {
+      "id": "be56",
+      "name": "",
+      "email": "",
+      "password": "",
+      "category": "Admin"
+    },
+    {
+      "id": "9fa9",
+      "name": "",
+      "email": "",
+      "password": "",
+      "category": "Admin"
+    },
+    {
+      "id": "6014",
+      "name": "",
+      "email": "",
+      "password": "",
+      "category": "User"
+    },
+    {
+      "id": "3b8a",
+      "name": "",
+      "email": "",
+      "password": "",
+      "category": "Admin"
+    },
+    {
+      "id": "56ed",
+      "name": "",
+      "email": "",
+      "password": "",
+      "category": "Admin"
+    },
+    {
+      "id": "150a",
+      "name": "",
+      "email": "",
+      "password": "",
+      "category": "Admin"
+    },
+    {
+      "id": "bd63",
+      "name": "",
+      "email": "",
+      "password": "",
+      "category": "User"
+    },
+    {
+      "id": "e86c",
+      "name": "",
+      "email": "",
+      "password": "",
+      "category": "User"
+    },
+    {
+      "id": "9a99",
+      "name": "",
+      "email": "",
+      "password": "",
+      "category": "Admin"
+    },
+    {
+      "id": "06c3",
+      "name": "",
+      "email": "",
+      "password": "",
+      "category": "User"
+    },
+    {
+      "id": "d2ce",
+      "name": "",
+      "email": "",
+      "password": "",
+      "category": "Admin"
+    },
+    {
+      "id": "b39b",
+      "name": "",
+      "email": "",
+      "password": "",
+      "category": "User"
+    },
+    {
+      "id": "e720",
+      "name": "",
+      "email": "",
+      "password": "",
+      "category": "Admin"
+    },
+    {
+      "id": "778a",
+      "name": "",
+      "email": "",
+      "password": "",
+      "category": "Admin"
+    }
+  ],
+  "cart": [
+  ]
+}
