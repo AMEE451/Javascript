@@ -594,22 +594,34 @@ document.getElementById("Dessert").addEventListener("click", () => handlecategor
 document.getElementById("Breakfast").addEventListener("click", () => handlecategory("Breakfast"));
 document.getElementById("Soup").addEventListener("click", () => handlecategory("Soup"));
 
-const SearchData = (value) => {
-  let temp = Food.filter((ele) => ele.name.includes(value));
-  let temp2=Food.filter((ele) => ele.city.includes(value));
-  uimaker(temp,temp2)
-  // console.log(temp2);
+
+const SearchData = (nameValue, cityValue) => {
+  let temp = [];
+  if (nameValue) {
+    temp = Food.filter((ele) => ele.name.includes(nameValue));
+  }
+  if (cityValue) {
+    temp = Food.filter((ele) => ele.city.includes(cityValue));
+  }
+  uimaker(temp);
 }
 
 const handleSearch = (e) => {
   e.preventDefault();
-  let search = document.getElementById("searchvalue").value;
-  let search2 = document.getElementById("searchvalue2").value;
-  SearchData(search,search2);
-  console.log(search2);
+  
+  if (e.target.id === 'search') {
+    let search = document.getElementById("searchvalue").value;
+    SearchData(search);
+  } else if (e.target.id === 'search2') {
+    let search2 = document.getElementById("searchvalue2").value;
+    SearchData("",search2);
+  }
+  console.log(search, search2);
 }
-document.getElementById("search").addEventListener("submit", handleSearch)
-document.getElementById("search2").addEventListener("submit", handleSearch)
+
+document.getElementById("search").addEventListener("submit", handleSearch);
+document.getElementById("search2").addEventListener("submit", handleSearch);
+
 
 
 const isexists = (id) => {
@@ -627,7 +639,6 @@ const handlecart = (ele) => {
           }
       })
       alert("qty added to cart")
-      // console.log();
   }
   else {
   

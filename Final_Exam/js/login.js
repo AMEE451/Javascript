@@ -20,12 +20,12 @@ const handleData = (e) => {
         else {  
             alert("login success: ")
             localStorage.setItem("islogin", true);
-            window.location.href="/index.html"
+            window.location.href="/Final_Exam/"
         }
     }
     else {
         alert("please sign up ")
-        window.location.href="/Pages/signup.html"
+        window.location.href="/Final_Exam/Pages/signup.html"
     }
 }
 
