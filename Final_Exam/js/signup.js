@@ -12,7 +12,7 @@ const handledata=(e)=>{
     }
     // localStorage.setItem("data",JSON.stringify(user))
     localStorage.setItem("islogin",true)
-    window.location.href="/Final_Exam/"
+    window.location.href="/Final_Exam/index.html"
     user.post(user1)
 }
 
@@ -36,14 +36,6 @@ const getlocation = () => {
 }
 
 getlocation();
-
-// const getweather = async (cityname) => {
-   
-//     let req = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityname}&appid=6c076a9fced43eaa1c0c984820ffc27b&units=metric`)
-//     let res= await req.json()
-//     console.log(res);
-//     uimaker(res)
-// }
 
 const getWeather = async (cityName) => {
     try {
@@ -82,9 +74,3 @@ const handleLocationAndWeather = async () => {
         console.error("Geolocation is not supported by this browser.");
     }
 };
-
-// document.getElementById("signup").addEventListener("submit", (e) => {
-//     e.preventDefault();
-//     handledata();
-//     handleLocationAndWeather(); 
-// });
