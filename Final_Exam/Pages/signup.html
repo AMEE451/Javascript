@@ -13,6 +13,34 @@
         crossorigin="anonymous"></script>
 </head>
 
+<style>
+    .form{
+    border: 1px solid rgb(18, 18, 18); 
+    width: 420px;
+    height: 420px;
+    margin-top: 50px;
+    border-radius: 10px;
+    padding-top: 25px;
+}
+.form:hover{
+    box-shadow: rgb(208, 208, 209) 3px 3px 15px 0px,rgb(208, 208, 209) -3px -3px 15px 1px;
+}
+ .main{
+    display: flex;
+    justify-content: center;
+ }
+input:hover {
+    box-shadow: rgba(131, 131, 241, 0.25) 0px 50px 100px  inset;
+}
+input{
+    padding: 8px; 
+    margin: 10px;
+    width: 400px;
+    border-radius: 5px;
+    border:1px solid black
+}
+</style>
+
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -26,13 +54,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                        <a class="nav-link active" aria-current="page" href="/Final_Exam/index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/Pages/signup.html">Sign-Up</a>
+                        <a class="nav-link" href="/Final_Exam/Pages/signup.html">Sign-Up</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/Pages/login.html">Login</a>
+                        <a class="nav-link" href="/Final_Exam/Pages/login.html">Login</a>
                     </li>
                     <form class="d-flex">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -42,16 +70,19 @@
         </div>
     </nav>
 
-    <form id="signup">
-        <input type="text" placeholder="name" id="name"> <br>
-        <input type="number" placeholder="phone number" id="number"> <br>
-        <input type="email" placeholder="email" id="email"> <br>
-        <input type="number" placeholder="password" id="psw"> <br>
-        <input type="text" placeholder="city" id="city"> <br>
-        <input type="submit">
-    </form>
+    <div class="main">
+        <form id="signup" class="form">
+            <input type="text" placeholder="name" id="name"> <br>
+            <input type="number" placeholder="phone number" id="number"> <br>
+            <input type="email" placeholder="email" id="email"> <br>
+            <input type="number" placeholder="password" id="psw"> <br>
+            <input type="text" placeholder="city" id="city"> <br>
+            <input type="submit">
+        </form>
+    </div>
+   
 
 </body>
-<script type="module" src="/js/signup.js"></script>
+<script type="module" src="/Final_Exam/js/signup.js"></script>
 
 </html>
