@@ -558,7 +558,7 @@ const uimaker = (data) => {
         div.append(image,name,city,price,category,btn)
 
         btn.addEventListener("click",()=>handlecart(ele))
-
+      div.setAttribute("class","div")
         document.getElementById("foodcourt").append(div)
         console.log(div);
     })
@@ -608,7 +608,7 @@ const SearchData = (nameValue, cityValue) => {
 
 const handleSearch = (e) => {
   e.preventDefault();
-  
+
   if (e.target.id === 'search') {
     let search = document.getElementById("searchvalue").value;
     SearchData(search);

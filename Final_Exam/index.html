@@ -15,10 +15,39 @@
     #foodcourt {
         display: grid;
         grid-template-columns:repeat(5,1fr);
-        grid-gap: 10px;
+        /* margin-left: 40px; */
+        gap: 20px;
+        background-color: white;
     }
     img{
-        height: 200px;
+        height: 250px;
+    }
+    .div{
+        border: 1px solid grey;
+        text-align: center;
+        border-radius: 5px;
+        height: 500px;
+        padding-top:10px ;
+    }
+    .div:hover{
+        box-shadow: 0.5px 0.5px 5px 1px  rgb(174, 174, 174);
+        border-style: none;
+    }
+    .div img{
+        border-radius: 5px;
+    }
+    button{
+        border:1px solid grey;
+        border-radius: 3px;
+        padding: 5px 15px;
+    }
+    button:hover{
+        background-color: rgb(180, 197, 220);
+        box-shadow: 2px 2px 5px 1px rgb(163, 163, 163);
+        border: 1px solid rgb(158, 173, 193);
+    }
+    .btn:hover{
+        box-shadow: 0.5px 0.5px 5px 1px rgb(180, 197, 220);
     }
 </style>
 
@@ -45,20 +74,11 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/Final_Exam/Pages/login.html">Login</a>
                     </li>
-                    
-                    <!-- <form class="d-flex" id="search">
-                        <input class="form-control me-2" type="search" placeholder="Search Food" aria-label="Search" id="searchvalue">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                    <form class="d-flex" id="search2">
-                        <input class="form-control me-2" type="search" placeholder="Search City" aria-label="Search" id="searchvalue2">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form> -->
             </div>
         </div>
     </nav>
    
-    <div class="d-flex mb-4 border p-2">
+<div class="d-flex mb-4 border p-2">
 
     <div class="btn" id="lth">LTH</div>
     <div class="btn" id="htl">HTL</div>
@@ -81,7 +101,7 @@
 </div>
 
 
-    <div id="foodcourt"></div>
+    <div id="foodcourt" class="ms-3 me-3"></div>
 
 </body>
 <script type="module" src="./js/index.js"></script>
